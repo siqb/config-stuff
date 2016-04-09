@@ -1,0 +1,68 @@
+	• Stat [filename] - tells you the permissions number of a file - can be plugged into chmod
+	• Meld [file1] [file2] - side by side comparison of two files
+	• modpath - change global search path for dynamically loadable kernel modules
+
+	From <http://modman.unixdev.net/?sektion=2&page=modpath&manpath=HP-UX-11.11> 
+
+	• CTRL+Z - suspends running process
+	• bg - resumes suspended process, puts it into background
+	• find - will search any set of directories you specify for files that match the supplied search criteria.  You can search for files by name, owner, group, type, permissions, date, and other criteria.  The search is recursive in that it will search all subdirectories too.
+
+	From <http://content.hccfl.edu/pollock/Unix/FindCmd.htm> 
+
+	• You can specify as many places to search as you wish: 
+	• find /tmp /var/tmp . $HOME -name foo
+
+	From <http://content.hccfl.edu/pollock/Unix/FindCmd.htm> 
+
+	• grep command: Recursively Search All Files For A String
+	cd /path/to/dir
+	grep -r "word" .
+	where "b" and "a" are the number of lines to print before and after string
+	
+	From <http://www.unix.com/solaris/33533-grep-display-few-lines-before-after.html> 
+	
+	
+
+	From <http://www.cyberciti.biz/faq/howto-recursively-search-all-files-for-words/> 
+	
+	• Diff the output of two scripts:
+		○ diff < (ls -lt) < (ls -ltr)
+	
+	• realpath [file] - display full path of a file
+	• pushd and popd
+		○ Most people don't use the pushd and popd commands. But these commands can be really useful if you work a lot at the command line. There are many times when you wish to go into a directory that is deeply nested, only to realise that you have to get back to the directory that you were previously working in.
+		○ This is where the pushd and the popd commands come in handy. You can push the current directory onto a stack using the pushd command. Then you can switch to any directory you wish. If you wish to get back to the directory that you had earlier pushed onto the stack all you have to do is use the popd command.
+	
+	From <http://synapse.wordpress.com/2006/05/11/using-pushd-and-popd-in-linux/> 
+	
+	• Check my disk space:
+		○ df | grep seaniqba
+		○ du -sh <path>
+	• Pipe command output into clipboard
+		○ Command | xclip
+
+
+Kill a Background Job
+
+me:  how do you kill something u put in the background?
+Shatil:  If you're in the same shell, "jobs -l" will show you what's running in the bg (also will show STOPped or SUSPENDED tasks).
+That'll tell you the process number. You can bring it to the foreground by saying "fg 1" or "fg %1" (Bash vs. Zsh).
+And kill it with CTRL+C or CTRL+D, or you can use the "kill" command.
+The gentlemanly way is to used signals 2, 1, then 15.
+If none of those work or you really want to kill it with extreme prejudice, 9.
+E.g., kill -9 41533
+or
+kill -KILL 41533
+http://meinit.nl/the-3-most-important-kill-signals-on-the-linux-unix-command-line
+
+
+rsync -apv /source/with/end/slash/ /destination/with/end/slash/
+
+Size of files and directories in current area
+
+du -ks | sort -n
+
+Convert to MS Windows new line characters
+
+unix2dos input.txt output.txt
