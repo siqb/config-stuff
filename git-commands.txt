@@ -1,81 +1,91 @@
 Commit a File:
 
-  git commit <path/filename>
-
-  OR USE GUI:
-
-  git citool
+	git commit <path/filename>
+  	OR USE GUI:
+	git citool
 
 Stash a File:
 
-git stash 
+	git stash 
 
 View Stashes:
 
-git stash list
+	git stash list
 
-Reapply Stash:
+Reapply latest stash
 
-Latest stash
-
-git stash reapply
+	git stash reapply
+	OR
+	git stash pop
 
 Specific stash
 
-git stash apply stash@{2}
+	git stash apply stash@{2}
 
-git stash pop
-if there were merge conflicts:
+If there were merge conflicts:
 
-git stash drop
+	git stash drop
 
 Update your repo:
 
-First, commit or stash all changes
-git pull
-git mergetool --tool=meld
+	First, commit or stash all changes
+	git pull
+	git mergetool --tool=meld
 
 Update with rebase:
 
-git pull --rebase
+	git pull --rebase
 
 Undo pull
 
-git reflog
-git reset --hard 26a96f1
+	git reflog
+	git reset --hard <commit id>
+	
+Reset to a commit:
+
+	Clean working directory:
+	
+		git reset --hard <commit id>
+		
+	Keep changes in working directory:
+	
+		git reset --soft <commit id>
 
 Create a new branch
 
-git checkout -b <branch>
+	git checkout -b <branch>
 
 List Branches
 
-git branch
-git branch -v
+	git branch
+	git branch -v
 
 Delete a local branch
 
-git branch -d <branchname>
+	git branch -d <branchname>
 
 Cherry-pick from a remote repo
 
-cd /home/you/projectA
-git remote add projectB /home/you/projectB
-git fetch projectB
+	cd /home/you/projectA
+	git remote add projectB /home/you/projectB
+	git fetch projectB
 
-Then you have a choice:
+	Then you have a choice:
 
-git merge projectB/master
+	git merge projectB/master
 
-or:
+	or:
 
-git cherry-pick <first_commit>..<last_commit>
+	git cherry-pick <first_commit>..<last_commit>
 
-git init
-Transform the current directory into a Git repository. This adds a .git folder to the current directory and makes it possible to start recording revisions of the project.
+Transform the current directory into a Git repository. 
 
-• Replace a single file in model with head version
-	○ git checkout HEAD -- my-file.txt
+	This adds a .git folder to the current directory and makes it possible to start recording revisions of the project.
+	git init
+	
+Replace a single file in model with head version
+	
+	git checkout HEAD -- my-file.txt
 
 Temporarily switch to a different commit
 
