@@ -170,5 +170,11 @@ Syntax highlighting
 :syntax off	Turn off syntax highlighting
 :set syntax=perl	Force syntax highlighting
 
+Executing Unix commands in vi:
 
+  Any UNIX command can be executed from the vi command line by typing an "!" before the UNIX command.
+  Examples:
+    :!pwd - shows your current working directory.
+    :!ls - shows files in your current working directory.
+    :sh - open a new Bash shell. Editing session is suspended until you exit the shell. Execute all the commands you want and then return to the vim session
 
