@@ -36,6 +36,10 @@ Update with rebase:
 
 	git pull --rebase
 
+Interactively modify (remove, edit, squash, etc.) last four commits:
+
+	git rebase -i HEAD~4
+
 Undo pull
 
 	git reflog
