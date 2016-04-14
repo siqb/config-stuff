@@ -66,3 +66,8 @@ du -ks | sort -n
 Convert to MS Windows new line characters
 
 unix2dos input.txt output.txt
+
+To spell check a single LaTeX (.tex) file you issue the following command:
+
+	aspell --lang=en --mode=tex check file.tex
+
