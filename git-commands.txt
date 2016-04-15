@@ -108,6 +108,10 @@ Show file names of commit only:
 
 	git show --name-only
 	
+Show URL:
+
+	git remote show origin
+
 Change repo URL:
 
 	git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
