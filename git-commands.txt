@@ -103,3 +103,7 @@ Or if you want to make commits while you're there, go ahead and make a new branc
 
 
 git checkout -b old-state 0d1d7fc32
+
+Show file names of commit only:
+
+	git show --name-only
