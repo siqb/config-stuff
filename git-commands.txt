@@ -107,3 +107,7 @@ git checkout -b old-state 0d1d7fc32
 Show file names of commit only:
 
 	git show --name-only
+	
+Change repo URL:
+
+	git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
