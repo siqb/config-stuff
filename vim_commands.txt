@@ -1,5 +1,9 @@
 Vim Commands
 
+Grep code base for string under cursor:
+
+:nnoremap K :grep! -rin "\b<C-R><C-W>\b" . <CR>:vertical copen<CR>  
+
 Basics
 
 :e        filename	Open filename for edition
