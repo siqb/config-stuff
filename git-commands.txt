@@ -115,3 +115,7 @@ Show URL:
 Change repo URL:
 
 	git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
+
+Clone over SSHL:
+
+	git clone ssh://git@github.com/<user>/<repository name>.git
