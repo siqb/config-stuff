@@ -4,3 +4,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "/home/seani/.vim/bundle/nerdtree"]
+	path = /home/seani/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
