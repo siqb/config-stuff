@@ -1,3 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 syntax enable
 au BufNewFile,BufRead *.sv set filetype=verilog
 au BufNewFile,BufRead *.vs set filetype=verilog
