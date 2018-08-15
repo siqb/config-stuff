@@ -1,0 +1,3 @@
+# Make Bluetooth work on Ubuntu 16.04
+# https://plugable.com/2015/05/11/quick-fix-for-problems-using-bluetooth-from-the-raspberry-pi-desktop/
+sudo usermod -G bluetooth -a <user>
