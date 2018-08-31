@@ -13,3 +13,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/vim-side-search"]
+	path = bundle/vim-side-search
+	url = https://github.com/ddrscott/vim-side-search
