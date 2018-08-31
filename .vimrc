@@ -124,3 +124,6 @@ let b:match_words = '\<begin\>:\<end\>,'
 "Grep code base for string under cursor:
 noremap K :grep! -rin "\b<C-R><C-W>\b" . <CR>:vertical copen<CR>
 set mouse=a
+
+" Enable 256 colors in terminal
+set term=screen-256color
