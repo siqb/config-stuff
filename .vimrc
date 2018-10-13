@@ -30,7 +30,7 @@ set title
 set titlelen=70
 set autoindent
 set tabstop=4
-set softtabstap=4
+"set softtabstap=4
 set showmode
 set expandtab
 set nu
